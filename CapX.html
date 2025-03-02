@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapX Video Reels</title>
+    <link rel="stylesheet" href="CapX.css">
+</head>
+<body>
+    <div class="video-section">
+        <div class="icon-container">
+            <img src="CapX.jpeg" alt="CapX Logo" class="site-icon">
+        </div>
+        <pre class="quote">"Explore the Nature
+                            &
+                    Feel the Magic"</pre>
+        <div class="reel-container">
+            <div class="reel" onclick="openVideo(this)">
+                <video src="./Videos/Forest.mp4" muted></video>
+                <div class="play-button"></div>
+            </div>
+            <div class="reel" onclick="openVideo(this)">
+                <video src="./Videos/Mountain.mp4" muted></video>
+                <div class="play-button"></div>
+            </div>
+            <div class="reel" onclick="openVideo(this)">
+                <video src="./Videos/Rain.mp4" muted></video>
+                <div class="play-button"></div>
+            </div>
+            <div class="reel" onclick="openVideo(this)">
+                <video src="./Videos/Roads.mp4" muted></video>
+                <div class="play-button"></div>
+            </div>
+            <div class="reel" onclick="openVideo(this)">
+                <video src="./Videos/WaterFalls.mp4" muted></video>
+                <div class="play-button"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-popup" class="video-popup" onclick="closeVideo()">
+        <div class="popup-content">
+            <video controls autoplay></video>
+        </div>
+    </div>
+
+    <script src="CapX.js"></script>
+</body>
+</html>
